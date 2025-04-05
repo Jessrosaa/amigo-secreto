@@ -26,14 +26,6 @@ body {
     width: auto;
 }
 
-.cabecalho{
-    padding: 2% 0% 0% 15%;
-}
-.cabecalho__menu{
-    display: flex;
-    gap: 80px;
-}
-
 
 .main-content {
     display: flex;
@@ -85,7 +77,12 @@ body {
     width: auto
 }
 
-
+@media (max-width: 600px) {
+    .header-banner {
+        flex-direction: column; /* Garante que o título e a imagem fiquem alinhados */
+        text-align: center;
+    }
+ }
 
 .section-title {
     font-family: "Inter", serif;
