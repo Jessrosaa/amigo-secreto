@@ -74,6 +74,7 @@ body {
     font-style: italic;
     color: var(--color-white);
     margin-left: 0;
+    width: auto
 }
 
 
