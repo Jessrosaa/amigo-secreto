@@ -12,18 +12,26 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    
+
 }
 
 
 body {
-    height: 100vh;
+    
+    box-sizing: border-box;
     background-color: var(--color-primary);
     display: flex;
     flex-direction: column;
     min-height: 100vh;
     width: auto;
+}
+
+.cabecalho{
+    padding: 2% 0% 0% 15%;
+}
+.cabecalho__menu{
+    display: flex;
+    gap: 80px;
 }
 
 
