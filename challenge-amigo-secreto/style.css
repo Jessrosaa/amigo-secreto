@@ -13,21 +13,25 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
+
 
 body {
     height: 100vh;
     background-color: var(--color-primary);
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    width: auto;
 }
+
 
 .main-content {
     display: flex;
     flex-direction: column;
-    height: 100%;
-    width: auto;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -37,6 +41,7 @@ body {
     justify-content: center;
     align-items: center;
     padding: 40px 0 0;
+    
 }
 
 
@@ -44,14 +49,23 @@ body {
     flex: 60%;
     background-color: var(--color-secondary);
     border: 1px solid #000;
-    border-radius: 64px 64px 0 0;
+    border-radius: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 20px;
-    width: 100%;
+    width: auto;
 }
 
+
+.header-banner {
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center;
+    gap: 8px;
+    width: 65%;
+    padding-left: 10px; 
+}
 
 .main-title {
     font-size: 48px;
@@ -59,7 +73,10 @@ body {
     font-weight: 900;
     font-style: italic;
     color: var(--color-white);
+    margin-left: 0;
 }
+
+
 
 .section-title {
     font-family: "Inter", serif;
@@ -80,7 +97,7 @@ body {
 }
 
 .input-name {
-    width: 100%;
+    width: auto;
     padding: 10px;
     border: 2px solid #000;
     border-radius: 25px 0 0 25px;
@@ -91,6 +108,17 @@ body {
     width: auto;
     justify-content: center;
 }
+
+.rodape{
+    color: var(--color-text);
+    background-color: var(--color-primary);
+    padding: 24px;
+    text-align: center;
+    font-family: var(--color-secondary);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
 
 
 .input-title {
@@ -103,6 +131,7 @@ body {
     font-family: "Merriweather", serif;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
+
 
 
 button {
@@ -139,14 +168,14 @@ ul {
     color: #05DF05;
     font-size: 22px;
     font-weight: bold;
-    text-align: center;
+    text-align: center; 
 }
 
 
 .button-draw {
     display: flex;
     align-items: center;
-    width: 100%;
+    width: auto;
     padding: 10px 40px;
     color: var(--color-white);
     background-color: var(--color-button);
@@ -160,3 +189,4 @@ ul {
 .button-draw:hover {
     background-color: var(--color-button-hover);
 }
+
